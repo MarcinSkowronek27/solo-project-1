@@ -35,23 +35,18 @@ body {
     padding: auto;
     align-items: center;
     margin: 0 8px;
-    color: red;
 }
 
-img {
-    color: red;
-}
+
 .arrow-down {
     padding: 0;
     width: 13px;
     height: 13px;
-    color: red;
 }
 
 .rounded {
     border: solid 1px $brand-border-color;
     border-radius: 50%;
-    color: red;
 }
 /*SECTION TOP BAR*/
 .bar {
@@ -83,6 +78,10 @@ img {
     position: relative;
     font-size: 24px;
     padding: 12px;
+}
+
+.btn:hover {
+ background-color: red;
 }
 /*SECTION SIDE BAR*/
 .side {
