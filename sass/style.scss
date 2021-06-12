@@ -31,7 +31,7 @@ body {
 .icon {
     width: 20px;
     height: 18px;
-    // padding: auto;
+    // padding: 12px 0 0 0;
     align-items: center;
     margin: 0 10px;
 }
@@ -45,6 +45,16 @@ body {
 .rounded {
     border: solid 1px $brand-border-color;
     border-radius: 50%;
+}
+
+/*ICONS EDITION*/
+
+.component-link svg {
+    // border: solid 2px white;
+    fill: $main-text-color;
+    margin-right: 15px;
+    height: 22px;
+    width: 22px;
 }
 /*SECTION TOP BAR*/
 .sidebar,
@@ -94,11 +104,17 @@ body {
 }
 
 .side-bar-wrapper {
+    display: flex;
+    flex-direction: column;
     width: 188px;
     margin: 0;
     color: white;
     text-align: left;
 }
+
+// .wrapper-title {
+//     // border: solid 2px yellow;
+// }
 
 .wrapper-title h1 {
     // display: flex;
@@ -107,7 +123,7 @@ body {
     height: 62px;
     text-align: center;
     font-size: 30px;
-    margin: 20px 0 72px 10px;
+    margin: 20px 0 12px 10px;
     // border: solid 2px red;
     font-family: "Satisfy", cursive;
 }
@@ -119,14 +135,26 @@ body {
     top: 15px;
     left: 140px;
 }
-.component {
-    width: 150px;
-}
-.component a {
-    color: white;
+.component-link {
+    display: flex;
+    width: 100%;
+    padding: 13px;
+    color: $main-text-color;
     text-decoration: none;
-    border: solid 2px yellow;
+    align-items: center;
 }
+
+.component-link p {
+    margin: 0;
+}
+.component-link:hover {
+    background-color: $main-text-color;
+    color: white;
+    #Layer_2 {
+        fill: white;
+    }
+}
+
 /*MAIN CONTENT*/
 
 .main-content {
