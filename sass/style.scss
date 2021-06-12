@@ -33,8 +33,13 @@ body {
     margin: 0;
     background-color: #f5f5f2;
     color: $main-text-color;
+    font-family: $brand-font;
 }
 
+.wrapper-all {
+    display: flex;
+    flex-direction: column;
+}
 .icon {
     width: 20px;
     height: 18px;
@@ -88,18 +93,25 @@ body {
 }
 
 .com--top-bar-item {
+    display: flex;
     border-left: solid 1px $brand-border-color;
     text-align: center;
     position: relative;
     padding: 20px 10px;
-    font-size: $main-font-size;
+    font-size: 18px;
     height: 100%;
     align-items: center;
     // border: solid 2px red;
+ 
 }
 
 .text {
     color: #4b5bee;
+    font-size: 14px;
+    // margin: auto;
+    img {
+        // margin-top: 20px;
+    }
 }
 .btn:hover {
     background-color: #e3e3e3;
