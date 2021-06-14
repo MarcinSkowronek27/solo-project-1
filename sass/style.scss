@@ -213,7 +213,7 @@ body {
     margin-top: 0;
     width: 100%;
     height: 50px;
-    border-bottom: solid 1px $brand-border-color;
+    border-bottom: solid 2px $brand-border-color;
     //    border: solid 2px red;
 }
 
@@ -233,11 +233,12 @@ body {
 }
 .date-table {
     display: flex;
-    flex-direction: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-bottom: solid 1px red;
+    border-bottom: solid 2px $brand-border-color;
     padding: 35px 0;
 }
 
@@ -277,6 +278,38 @@ input {
     height: 20px;
     margin: auto;
     padding: auto;
+}
+
+.wrapper-chart {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border: solid 1px red;
+    align-items: center;
+    width: 100%;
+    margin: 40px;
+}
+
+.one-chart {
+    width: 340px;
+    border: solid 1px red;
+    margin: 10px 80px ;
+    padding: 10px;
+    border-bottom: solid 1px $brand-border-color;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+} 
+
+.earning-data {
+    font-weight: 600;
+}
+
+.earning-number {
+    margin: auto 0;
+    color: black;
+    font-size: 18px;
+    // border: solid 1px red;
 }
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
