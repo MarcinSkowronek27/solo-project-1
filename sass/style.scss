@@ -102,7 +102,6 @@ body {
     height: 100%;
     align-items: center;
     // border: solid 2px red;
- 
 }
 
 .text {
@@ -222,6 +221,37 @@ body {
     //    border: solid 2px red;
 }
 
+.date-wrapper {
+    display: flex;
+    align-items: center;
+    border: solid 1px $brand-border-color;
+    padding: 3px;
+}
+.date-table .icon {
+    width: 20px;
+    height: 18px;
+    // padding: 12px 0 0 0;
+    align-items: center;
+    margin: 0 10px 0 0;
+    // border: solid 2px green;
+}
+
+input[type='datetime'] {
+    border: solid 1px yellow;
+    padding-right: 5px;
+    // width: 100px;
+
+}
+
+input[type='text'] {
+    border: none;
+    border-right: solid 1px $brand-border-color;
+}
+
+input {
+    margin: 5px 13px;
+    width: 150px;
+}
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
     .main-content .title-content {
