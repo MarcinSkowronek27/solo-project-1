@@ -240,6 +240,14 @@ body {
         margin: 0 10px 0 0;
         // border: solid 2px green;
     }
+    button {
+        margin-left: 20px;
+        svg {
+            border: solid 1px green;
+            margin: auto;
+            padding: auto;
+        }
+    }
 }
 
 input[type="datetime"] {
@@ -254,6 +262,14 @@ input[type="text"] {
 input {
     margin: 5px 13px;
     width: 150px;
+}
+
+.button {
+    border: solid 1px red;
+    width: 35px;
+    height: 35px;
+    margin-left: 5%;
+    padding: auto;
 }
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
