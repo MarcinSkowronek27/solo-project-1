@@ -107,10 +107,6 @@ body {
 .text {
     color: #4b5bee;
     font-size: 14px;
-    // margin: auto;
-    img {
-        // margin-top: 20px;
-    }
 }
 .btn:hover {
     background-color: #e3e3e3;
@@ -226,13 +222,7 @@ body {
     align-items: center;
     border: solid 1px $brand-border-color;
     padding: 3px;
-}
-.date-table {
-    display: flex;
-    flex-direction: wrap;
-    align-items: center;
-    justify-content: center;
-    .icon {
+       .icon {
         width: 20px;
         height: 18px;
         // padding: 12px 0 0 0;
@@ -240,18 +230,17 @@ body {
         margin: 0 10px 0 0;
         // border: solid 2px green;
     }
-    button {
-        margin-left: 20px;
-        svg {
-            border: solid 1px green;
-            margin: auto;
-            padding: auto;
-        }
-    }
+}
+.date-table {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="datetime"] {
     padding-right: 5px;
+    border: none;
 }
 
 input[type="text"] {
@@ -265,10 +254,25 @@ input {
 }
 
 .button {
-    border: solid 1px red;
-    width: 35px;
-    height: 35px;
-    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    width: 43px;
+    height: 43px;
+    margin-left: 15px;
+    background-color: $button-color;
+    svg {
+        fill: white;
+    }
+}
+.button:hover{
+    background-color: $button-color-hover;
+}
+.button .icon {
+    width: 20px;
+    height: 20px;
+    margin: auto;
     padding: auto;
 }
 /*MEDIA QUERIES*/
