@@ -227,23 +227,26 @@ body {
     border: solid 1px $brand-border-color;
     padding: 3px;
 }
-.date-table .icon {
-    width: 20px;
-    height: 18px;
-    // padding: 12px 0 0 0;
+.date-table {
+    display: flex;
+    flex-direction: wrap;
     align-items: center;
-    margin: 0 10px 0 0;
-    // border: solid 2px green;
+    justify-content: center;
+    .icon {
+        width: 20px;
+        height: 18px;
+        // padding: 12px 0 0 0;
+        align-items: center;
+        margin: 0 10px 0 0;
+        // border: solid 2px green;
+    }
 }
 
-input[type='datetime'] {
-    border: solid 1px yellow;
+input[type="datetime"] {
     padding-right: 5px;
-    // width: 100px;
-
 }
 
-input[type='text'] {
+input[type="text"] {
     border: none;
     border-right: solid 1px $brand-border-color;
 }
