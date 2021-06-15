@@ -284,7 +284,7 @@ input {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    border: solid 1px red;
+    // border: solid 1px red;
     align-items: center;
     width: 100%;
     margin: 40px;
@@ -292,14 +292,15 @@ input {
 
 .one-chart {
     width: 340px;
-    border: solid 1px red;
-    margin: 10px 80px ;
+    // border: solid 1px red;
+    margin: 10px 80px;
     padding: 10px;
     border-bottom: solid 1px $brand-border-color;
     display: flex;
     flex-flow: row;
+    flex: 0 30%;
     justify-content: space-around;
-} 
+}
 
 .earning-data {
     font-weight: 600;
