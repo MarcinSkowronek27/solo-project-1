@@ -317,6 +317,17 @@ input {
     font-size: 18px;
     // border: solid 1px red;
 }
+
+.scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .scroll-wrapper table {
+    width: 100%;
+    max-width: 100%;
+  }
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
     .main-content .title-content {
