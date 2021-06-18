@@ -267,24 +267,70 @@ input {
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    width: 43px;
+    color: white;
+    text-decoration: none;
+}
+.button svg {
+    fill: white;
+}
+
+.arrow {
+    // border-radius: 3px;
+    // width: 43px;
     height: 43px;
     margin-left: 15px;
     background-color: $button-color;
-    svg {
-        fill: white;
-    }
+}
+.add {
+    text-align: center;
+    // align-items: center;
+    // justify-content: center;
+    height: 40px;
+    width: 130px;
+    margin-top: 25px;
+    background-color: $button-color;
+    // border: solid 1px red;
 }
 .button:hover {
     background-color: $button-color-hover;
 }
-.button .icon {
+.button .arrow .icon {
     width: 20px;
     height: 20px;
     margin: auto;
     padding: auto;
 }
 
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    border: solid 1px red;
+}
+section .scroll-wrapper {
+    border: solid 1px yellowgreen;
+    margin-top: 20px;
+    width: 100%;
+}
+.table tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+table td {
+    border: solid 1px orange;
+    width: auto;
+}
+td a {
+    fill: $main-text-color;
+    // margin-right: 20px;
+    height: 45px;
+    width: 22px;
+    border: solid 1px red;
+}
 .wrapper-chart {
     display: flex;
     flex-flow: row wrap;
@@ -322,12 +368,12 @@ input {
     display: block;
     width: 100%;
     overflow-x: auto;
-  }
-  
-  .scroll-wrapper table {
+}
+
+.scroll-wrapper table {
     width: 100%;
     max-width: 100%;
-  }
+}
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
     .main-content .title-content {
@@ -335,7 +381,7 @@ input {
     }
 
     .main-content {
-        margin:auto;
+        margin: auto;
     }
 
     // .hamburger img {
