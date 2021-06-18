@@ -1,0 +1,19 @@
+.earning-chart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.earning-chart h1 {
+    margin-left: 100px;
+    width: 70%;
+    padding: 20px;
+    // border: solid 1px red;
+}
+
+.earning-chart img {
+    width: 70%;
+    height: 100%;
+}
