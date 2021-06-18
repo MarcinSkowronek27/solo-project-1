@@ -79,6 +79,7 @@ body {
     width: 100%;
     height: 60px;
     background: #ffffff;
+    z-index: 20;
 }
 
 .top-bar-wrapper {
@@ -118,6 +119,7 @@ body {
     flex-direction: column;
     height: 100%;
     background-color: black;
+    z-index: 30;
 }
 
 .side-bar-wrapper {
@@ -148,16 +150,18 @@ body {
 }
 
 .hamburger {
-    border: solid 1px green;
-}
-.hamburger img {
     z-index: 1;
     position: absolute;
     height: 35px;
     width: 35px;
     top: 15px;
     left: 140px;
-    border: solid 1px red;
+    // border: solid 1px green;
+}
+.hamburger img {
+    width: 100%;
+    height: 100%;
+    // border: solid 1px red;
 }
 .component-link {
     display: flex;
@@ -203,6 +207,7 @@ body {
     height: 800px;
     margin: 0 18px 18px 202px;
     top: 85px;
+    z-index: 10;
     // justify-content: center;
     // border: solid 2px red;
 }
@@ -242,7 +247,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     border-bottom: solid 2px $brand-border-color;
     padding: 35px 0;
 }
@@ -306,7 +311,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 70%;
     border: solid 1px red;
 }
 section .scroll-wrapper {
@@ -314,10 +319,14 @@ section .scroll-wrapper {
     margin-top: 20px;
     width: 100%;
 }
+
+.table {
+    width: 100%;
+}
 .table tr {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
     margin: 15px 0;
 }
 table td {
@@ -329,7 +338,7 @@ td a {
     // margin-right: 20px;
     height: 45px;
     width: 22px;
-    border: solid 1px red;
+    // border: solid 1px red;
 }
 .wrapper-chart {
     display: flex;
@@ -337,20 +346,20 @@ td a {
     justify-content: center;
     // border: solid 1px red;
     align-items: center;
-    width: 100%;
+    width: 70%;
     margin: 40px;
 }
 
 .one-chart {
-    width: 340px;
-    // border: solid 1px red;
-    margin: 10px 80px;
+    width: 100%;
+    // border: solid 1px green;
+    margin: 10px 60px;
     padding: 10px;
     border-bottom: solid 1px $brand-border-color;
     display: flex;
     flex-flow: row;
-    flex: 0 30%;
-    justify-content: space-around;
+    flex: 0 0 33.333%;
+    justify-content: space-between;
 }
 
 .earning-data {
@@ -361,6 +370,7 @@ td a {
     margin: auto 0;
     color: black;
     font-size: 18px;
+    padding-left: 25px;
     // border: solid 1px red;
 }
 
@@ -376,22 +386,28 @@ td a {
 }
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
-    .main-content .title-content {
-        border: solid 2px red;
-    }
-
+   
     .main-content {
         margin: auto;
     }
 
-    // .hamburger img {
-    //     position: absolute;
-    //     height: 35px;
-    //     width: 35px;
-    //     top: 15px;
-    //     left: 15px;
-    // }
+    .hamburger {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        top: 15px;
+        left: 0px;
+        border-radius: 3%;
+    }
     .show {
         display: none;
+    }
+
+    .shifted {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        top: 15px;
+        left: 140px;
     }
 }
