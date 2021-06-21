@@ -425,24 +425,28 @@ table td {
     flex-flow: column wrap;
     position: absolute;
     background-color: white;
-    border: solid 1px red;
-    height: 300px;
+    // border: solid 1px red;
+    height: auto;
     width: 100%;
     bottom: 0;
     align-items: center;
     justify-content: flex-start;
     .top-bar-item {
-        height: 50px;
-        padding: 10px 10px;
+        // height: 50px;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        margin: auto;
         border-bottom: solid 1px $brand-border-color;
     }
     a {
         margin: 0;
         padding-top: 10px;
         width: 100%;
-        border: solid 1px red;
+        // border: solid 1px red;
         text-align: center;
         height: 45px;
+        border-bottom: solid 1px $brand-border-color;
         img {
             width: 20px;
             height: 25px;
@@ -453,10 +457,11 @@ table td {
         width: 100%;
         padding: 5px 0;
         // margin: 10px 0;
-        border: solid 1px green;
+        // border: solid 1px green;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        border-bottom: solid 1px $brand-border-color;
         p {
             // border: solid 1px red;
             font-size: 14px;
