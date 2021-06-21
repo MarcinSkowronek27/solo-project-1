@@ -419,7 +419,9 @@ table td {
     width: 100%;
     max-width: 100%;
 }
-
+.sidebar-wrapper-all .hidden {
+    display: none;
+}
 .topbar-in {
     display: flex;
     flex-flow: column wrap;
@@ -497,6 +499,10 @@ table td {
     }
     .show {
         display: none;
+    }
+
+    .sidebar-wrapper-all .hidden {
+        display: flex;
     }
 
     .shifted {
