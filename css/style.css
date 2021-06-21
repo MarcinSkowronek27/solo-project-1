@@ -585,12 +585,12 @@ body {
   padding: 35px 0;
 }
 
-input[type="datetime"] {
+input[name="daterange-two"] {
   padding-right: 5px;
   border: none;
 }
 
-input[type="text"] {
+input[name="daterange"] {
   border: none;
   border-right: solid 1px #e3e3e3;
 }
