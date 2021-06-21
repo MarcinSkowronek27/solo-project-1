@@ -230,6 +230,8 @@ body {
 
 .date-wrapper {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     border: solid 1px $brand-border-color;
     padding: 6px;
@@ -238,6 +240,7 @@ body {
         height: 18px;
         // padding: 12px 0 0 0;
         align-items: center;
+        justify-content: center;
         margin: 0 10px 0 0;
         // border: solid 2px green;
     }
@@ -253,7 +256,7 @@ body {
     padding: 35px 0;
 }
 
-input[name="daterange-two" ] {
+input[name="daterange-two"] {
     padding-right: 5px;
     border: none;
 }
@@ -330,7 +333,8 @@ table {
         text-decoration: none;
         color: rgb(39, 141, 209);
     }
-    .link-icon, .trash-icon {
+    .link-icon,
+    .trash-icon {
         height: 100%;
         width: 48px;
         margin: 0 20px;
@@ -415,12 +419,68 @@ table td {
     width: 100%;
     max-width: 100%;
 }
+
+.topbar-in {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    background-color: white;
+    border: solid 1px red;
+    height: 300px;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+    justify-content: flex-start;
+    .top-bar-item {
+        height: 50px;
+        padding: 10px 10px;
+        border-bottom: solid 1px $brand-border-color;
+    }
+    a {
+        margin: 0;
+        padding-top: 10px;
+        width: 100%;
+        border: solid 1px red;
+        text-align: center;
+        height: 45px;
+        img {
+            width: 20px;
+            height: 25px;
+        }
+    }
+    .login-name {
+        display: flex;
+        width: 100%;
+        padding: 5px 0;
+        // margin: 10px 0;
+        border: solid 1px green;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        p {
+            // border: solid 1px red;
+            font-size: 14px;
+            color: #4b5bee;
+        }
+        .icon {
+            margin-right: 10px;
+            padding: auto;
+            border: solid 1px black;
+        }
+    }
+}
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
     .main-content {
         margin: auto;
     }
+    .date-wrapper {
+        flex-direction: column;
+    }
 
+    input[type="text"] {
+        border: none;
+    }
     .hamburger {
         position: absolute;
         height: 35px;
@@ -428,6 +488,7 @@ table td {
         top: 15px;
         left: 0px;
         border-radius: 3%;
+        transition: all 0.3 ease;
     }
     .show {
         display: none;
