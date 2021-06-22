@@ -40,6 +40,7 @@ body {
 .wrapper-all {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .icon {
     width: 20px;
@@ -71,10 +72,6 @@ body {
     width: 22px;
 }
 /*SECTION TOP BAR*/
-section .sidebar {
-    position: absolute;
-    top: 0;
-}
 .topbar {
     position: fixed;
 }
@@ -119,9 +116,10 @@ section .sidebar {
 }
 /*SECTION SIDE BAR*/
 section .sidebar {
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
-    height: 1000px;
     background-color: black;
     z-index: 30;
 }
@@ -198,7 +196,7 @@ section .sidebar {
     height: 55px;
     width: 55px;
     // border: solid 2px green;
-    margin-left: 20px;
+    margin: 0 0 20px 20px ;
 }
 /*MAIN CONTENT*/
 
@@ -244,7 +242,7 @@ section .sidebar {
         // padding: 12px 0 0 0;
         align-items: center;
         justify-content: center;
-        margin: 0 10px 0 0;
+        // margin: 0 10px 0 0;
         // border: solid 2px green;
     }
 }
@@ -428,12 +426,10 @@ table td {
 .topbar-in {
     display: flex;
     flex-flow: column wrap;
-    position: relative;
     background-color: white;
-    // border: solid 1px red;
+    border: solid 1px black;
     height: auto;
     width: 100%;
-    bottom: 0;
     align-items: center;
     justify-content: flex-end;
     .top-bar-item {
@@ -488,8 +484,15 @@ table td {
         flex-direction: column;
     }
 
+    .arrow {
+        margin-top: 14px;
+        margin-left: 0;
+    }
+
     input[type="text"] {
         border: none;
+        text-align: center;
+        width: 100px;
     }
     .hamburger {
         position: absolute;
