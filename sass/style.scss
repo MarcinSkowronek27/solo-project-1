@@ -40,7 +40,6 @@ body {
 .wrapper-all {
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 .icon {
     width: 20px;
@@ -122,6 +121,7 @@ section .sidebar {
     flex-direction: column;
     background-color: black;
     z-index: 30;
+    height: 157vh;
 }
 
 .side-bar-wrapper {
@@ -269,7 +269,7 @@ input[name="daterange"] {
 
 input {
     margin: 5px 13px;
-    width: 150px;
+    width: 100px;
 }
 
 .button {
@@ -484,9 +484,13 @@ table td {
         flex-direction: column;
     }
 
+    section .sidebar {
+        height: auto;
+    }
+
     .arrow {
         margin-top: 14px;
-        margin-left: 0;
+        // margin-left: 0;
     }
 
     input[type="text"] {
